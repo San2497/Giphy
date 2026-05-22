@@ -4,7 +4,7 @@ import './Header.css';
 export default function Header() {
   return (
     <div className="header">
-        <img src="/images/giphy-logo.png" alt="Giphy Logo" className="logo"/>
+        <img src="/images/giphy-logo.webp" alt="Giphy Logo" className="logo"/>
         <div className="menu">
             <h2>Reactions</h2>
             <h2>Entertainment</h2>
