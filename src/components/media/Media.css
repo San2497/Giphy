@@ -1,0 +1,41 @@
+.clips-icon .MuiSvgIcon-root {
+    color: #1dcafa;
+    border: 1px solid #1dcafa;
+    border-radius: 8px;
+}
+
+.trending-icon .MuiSvgIcon-root {
+    color: #1d88fa;
+    
+}
+
+.artists-icon .MuiSvgIcon-root {
+    color: #fa541d;
+}
+
+.stories-icon .MuiSvgIcon-root {
+    color: #541dfa;
+}
+
+.row {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.row-header {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.row-header .MuiSvgIcon-root{
+    margin-right: 6px;
+    margin-top: 3px;
+}
+
+.trending-container{
+    display: flex;
+    height: 150px;
+    overflow: hidden;
+}
