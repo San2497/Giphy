@@ -1,7 +1,6 @@
 .search-container {
   display: flex;
   align-items: center;
-  margin-top: 20px;
   height: 40px;
   margin-top: 5px;
 }
@@ -13,6 +12,8 @@
   background-color: #ffffff;
   border: none;
   padding-left: 10px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
 }
 
 ::placeholder {
@@ -30,10 +31,36 @@
     height: 40px;
     width: 45px;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.search-icon:hover {
+    filter: brightness(1.15);
 }
 
 .search-icon .MuiSvgIcon-root {
     font-size: 36px;
+}
+
+.clear-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.15s ease;
+}
+
+.clear-icon:hover {
+    color: #000;
+}
+
+.clear-icon .MuiSvgIcon-root {
+    font-size: 20px;
 }

@@ -11,8 +11,10 @@ const activeRequests = {};
  * automatically appends tracking hooks, and cleanly flattens responses.
  */
 const requestHandler = async (method, url, config = {}) => {
-  // Create a unique cache key based on the structural query pathway
-  const requestKey = `${method}_${url}`;
+  // Create a unique cache key based on the full request identity (method + baseURL + url + params)
+  const baseURL = config.baseURL || '';
+  const paramString = config.params ? JSON.stringify(config.params) : '';
+  const requestKey = `${method}_${baseURL}${url}_${paramString}`;
 
   // If a previous uncompleted network call exists for this exact stream, terminate it
   if (activeRequests[requestKey]) {
